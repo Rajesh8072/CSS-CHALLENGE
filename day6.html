@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>day6</title>
+    <style>
+      .background {
+        position: relative;
+        width: 400px;
+        left: 30%;
+      }
+      .background .backgroung-video {
+        width: 100%;
+        height: 100%;
+      }
+      .background h1 {
+        position: absolute;
+        inset: 0;
+
+        place-items: center;
+        background-color: #000000;
+        color: #ffffff;
+        font-weight: 900;
+        font-size: 100px;
+        font-family: sans-serif;
+        mix-blend-mode: multiply;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <video class="background-video" autoplay loop>
+        <source src="assets/file_example_MP4_480_1_5MG.mp4" />
+      </video>
+      <h1>EARTH</h1>
+    </div>
+  </body>
+</html>

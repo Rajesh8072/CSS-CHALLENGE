@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>day9</title>
+    <style>
+      .background {
+        height: 100%;
+        width: 100%;
+        background-color: aquamarine;
+      }
+      .content {
+        height: 250px;
+        width: 400px;
+        background-color: bisque;
+        position: relative;
+        top: 100px;
+        left: 450px;
+        box-shadow: 0 0 10px;
+        border-radius: 10px;
+      }
+      ul {
+        position: relative;
+        width: 400px;
+        height: 250px;
+        margin: 100px auto 0;
+        padding: 10px;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.1);
+        font-family: cursive;
+        font-weight: bold;
+      }
+
+      ul li {
+        display: flex;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px 20px;
+        color: #fff;
+        margin: 16px 0;
+        transition: 0.5s;
+        border-radius: 4px;
+      }
+      ul li:nth-child(1) {
+        background: rgba(0, 0, 0, 0.6);
+      }
+      ul li:nth-child(2) {
+        background: rgba(24, 24, 24, 0.4);
+      }
+      ul li:nth-child(3) {
+        background: rgba(59, 59, 59, 0.2);
+      }
+      ul li:nth-child(4) {
+        background: rgba(88, 88, 88, 0.2);
+      }
+      ul li span:nth-child(1) {
+        width: 30px;
+        color: red;
+      }
+      ul li span:nth-child(2) {
+        width: 200px;
+        left: 10px;
+        position: relative;
+        color: green;
+      }
+      ul li span:nth-child(3) {
+        width: 100px;
+        text-align: right;
+        color: black;
+      }
+      ul li span:nth-child(4) {
+        width: 70px;
+        text-align: right;
+        color: goldenrod;
+      }
+
+      ul li:hover {
+        transform: scale(1.5);
+        background: #9ad1ff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="content">
+        <ul class="list">
+          <li>
+            <span class="name">kavi</span>
+            <span class="register">19617112</span>
+            <span class="marks">35</span>
+            <span class="result">fail</span>
+          </li>
+          <li>
+            <span class="name">sara</span>
+            <span class="register">19617113</span>
+            <span class="marks">88</span>
+            <span class="result">pass</span>
+          </li>
+          <li>
+            <span class="name">siva</span>
+            <span class="register">19617114</span>
+            <span class="marks">40</span>
+            <span class="result">fail</span>
+          </li>
+          <li>
+            <span class="name">raju</span>
+            <span class="register">19617115</span>
+            <span class="marks">75</span>
+            <span class="result">pass</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

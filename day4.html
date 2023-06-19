@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <title>day 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .background {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 25%;
+      }
+      .login {
+        position: absolute;
+        height: 500;
+        width: 350;
+        background-color: aliceblue;
+        top: 60;
+        left: 135;
+      }
+      .loginimg {
+        width: 200px;
+        height: 200;
+        left: 95px;
+        position: relative;
+        top: 30px;
+      }
+      .loginimg::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #333;
+        top: 0;
+        left: 0;
+        animation: animate 1s linear infinite;
+        border-style: outset;
+        border-width: thick;
+        border-color: #f48c10;
+      }
+
+      .loginimg img {
+        position: relative;
+        height: 145;
+        width: 145;
+        border-radius: 50%;
+        left: 7;
+        top: 7;
+      }
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      H3 {
+        position: relative;
+        left: 130px;
+      }
+      P {
+        color: grey;
+        position: relative;
+        left: 110px;
+      }
+      .icons {
+        list-style: none;
+        display: flex;
+        left: 55;
+        position: relative;
+        letter-spacing: 25;
+        font-size: 30;
+        top: -15;
+      }
+      .fa {
+        color: #dec00a;
+      }
+      .fa:hover {
+        color: #f26b92;
+      }
+      .like {
+        padding: 10px 50px 10px 50px;
+        background-color: #f26b92;
+        left: 80;
+        position: relative;
+        top: -15;
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+      }
+      .like:hover {
+        background-color: burlywood;
+        color: black;
+      }
+      .value {
+        display: grid;
+        background-color: black;
+        grid-template-columns: 30% 30% 30%;
+        height: 81px;
+        width: 100%;
+        position: relative;
+        top: 30px;
+      }
+      .first {
+        color: aliceblue;
+        position: absolute;
+        top: 20;
+        left: 50;
+        font-size: 20;
+      }
+      h5 {
+        position: relative;
+        top: -45;
+        color: bisque;
+        font-size: 25;
+        left: -5;
+      }
+      .second {
+        color: aliceblue;
+        position: absolute;
+        top: 20;
+        left: 220;
+        font-size: 20;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <img src="assets/istockphoto-1249702917-612x612.jpg" />
+      <div class="login">
+        <div class="loginimg">
+          <img src="assets/newFile-1.avif" />
+        </div>
+        <h3>MABAPPE</h3>
+        <p>FOOTBALL PLAYER</p>
+        <ul class="icons">
+          <li>
+            <a href="#"
+              ><i class="fa fa-facebook-square" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-twitter-square" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <a href="#" class="like">FOLLOW HIM</a>
+        <div class="value">
+          <div class="first">
+            120
+            <h5>post</h5>
+          </div>
+          <div class="second">
+            110 M
+            <h5>followers</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
